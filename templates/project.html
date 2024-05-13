@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% load static %}
+
+    {% block title %}   Vaibhav | Project    {% endblock %}
+
+{% block content %}
+<style>
+    .container1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h4{
+        font-family: "Chicle", serif;
+        color: white;
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 7px;
+    }
+    
+</style>
+<div class="container m-auto my-3">
+    <h2 class="myhead text-center py-1">My Projects</h2>
+</div> 
+    <!-- Programming Gif starts here -->
+    <div class="container container1">
+        <div class="row">
+
+                <div class="col-md-12 col-sm-6">
+                    <img height="380px" width="auto" class="d-block" src="{% static 'images/coding-freak.Gif' %}" alt="">
+                </div>
+
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow mb-3">
+                    <img src="{% static 'images/product_management.jpg' %}" height="300px" width="150px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="py-2 text-center">Product Management System</h4>
+                      <p class="card-text">A Product Management System (PMS) is a software application or platform designed to facilitate the management of a product throughout its lifecycle, from ideation to development, launch, and ongoing optimization. Here's an overview of what a Product Management System typically involves</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow mb-3">
+                    <img src="{% static 'images/Title.jpeg' %}" height="270px" width="150px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="py-2 text-center">Analysis of Machine Learning Classifiers in Breast Cancer Diagnosis</h4>
+                      <p class="card-text">Breast cancer is a type of cancer that develops in the cells of the breast. It is one of the most common cancers among women worldwide, but it can also affect men, although it's rare. Breast cancer can occur in different parts of the breast, including the ducts, lobules, or tissue in between.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow mb-3">
+                    <img src="{% static 'images/Shopping_Cart.jpg' %}" height="300px" width="150px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="py-2 text-center">E-Commerce Shopping Cart</h4>
+                      <p class="card-text">
+                        An E-commerce Shopping Cart allows customers to select and manage items for purchase, providing features such as product display, quantity modification, and checkout functionality. It streamlines the online shopping experience by enabling secure transactions, order management.</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+        
+{% endblock %}    

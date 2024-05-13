@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    {% load static %}
+
+    <link rel="icon" type="image/x-icon" href="{% static 'images/Favicon.png'%}">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chicle&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <title>{% block title %} {% endblock %}</title>
+    
+    <!-- <style>
+        *{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+ul li i {
+    font-size: 25px;
+}
+
+.modal-header h1 {
+    font-size: larger;
+}
+
+.btn-close {
+    color: #ffffff;
+    /* White color */
+}
+.para{
+    float: left;
+}
+.image{
+    border: 50%;
+    float: right;
+}
+.modal-body a{
+    text-decoration: none;
+    color: cadetblue;
+}
+
+h1{
+    font-family: "Dancing Script", cursive;
+}
+.hr{
+    
+    border: 2px solid rgb(24, 21, 64);
+
+}
+.para{
+    font-size: larger;
+}
+.custom-shape {
+    
+    clip-path: polygon(96.04% 69.5%,68.77% 96.34%,30.5% 96.04%,3.66% 68.77%,3.96% 30.5%,31.23% 3.66%,69.5% 3.96%,96.34% 31.23%);
+ 
+}
+.card h5{
+    font-family: "Protest Riot", sans-serif;
+}
+.strip h4{
+    font-family: "Bungee", sans-serif;
+}
+
+.mycard{
+    margin-left: 19%;
+}
+.my_list{
+    display: flex;
+    justify-content: space-evenly;
+}
+.myhead{
+    color: white;
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 7px;
+}
+.myFooter,h5{
+    color: white;
+     font-family: "Bungee", sans-serif;
+    /* background: #0f0c29;  fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+    </style> -->
+    <style>
+        .card{
+        position: relative;
+  top: 0;
+  transition: top ease 0.3s;
+    }
+   .card:hover{
+    top: -10px;
+    transition: 0.5 ease-in-out;
+   }
+    </style>
+     <style>
+        {% block style %}
+        /* Default styles go here */
+        {% endblock %}
+    </style>
+</head>
+
+<body>
+    <!-- navbar starts here -->
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/"><img src="{% static 'images/Logo.PNG' %}" alt="logo" height="40px" width="auto"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/projects">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/feedbacks">Feedbacks</a>
+                    </li>
+
+
+                </ul>
+                <ul class="navbar-nav ms-auto mb-1 mb-lg-0">
+                    <li class="nav-link">
+                        <a href="{% static 'Resume.pdf' %}" style="text-decoration: none; color: rgb(166, 167, 168);" download><i class="bi bi-filetype-pdf"></i>&nbsp;Resume</a>
+                    </li>
+                    <li class="nav-link">
+                        <i class="bi bi-person-circle" data-target="#Login" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"></i>
+                    </li>
+                    <li class="nav-link">
+                        <i class="bi bi-person-fill-add" data-target="#register" data-bs-toggle="modal"
+                            data-bs-target="#signupModal"></i>
+                    </li>
+                </ul>
+
+
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar ends here -->
+
+    <!--  Modal for Login Starts Here -->
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+   -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  ">
+            <div class="modal-content ">
+                <div class="modal-header bg-dark text-white">
+                    <h3 class="modal-title  fs-4" id="exampleModalLabel">Login Page - Under Development</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body shadow rounded bg-light">
+                    <center>
+                        <img class="m-auto" height="170px" width="auto" src="{% static 'images/login.png' %}" alt="">
+                    </center>
+                    <form action="" method="post">
+                        <div class="md-3">
+                            <label for="" class="form-label">Username</label>
+                            <input type="text" class="form-control" autocomplete="off" required>
+                        </div>
+                        <div class="md-3">
+                            <label for="" class="form-label">Password</label>
+                            <input type="password" class="form-control" autocomplete="off" required>
+                        </div>
+                        <div class="mb-3 offset-5 my-3">
+                            <button type="submit" onclick="" class=" text-dark btn btn-info"
+                                name="submit">Login</button>
+                        </div>
+                        <a href="" data-target="#register" data-bs-toggle="modal"
+                        data-bs-target="#signupModal" class="link my-4">Don't have an account..?</a>
+                        <br>
+
+                        <a href="">Forgot Password..</a>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--  Modal for Login Ends Here -->
+
+     <!-- signup modal starts here  -->
+     <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h3 class="modal-title  fs-4" id="signupModalLabel">Sign Up - Under Development</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="offset-3">
+                        <img class="m-auto" height="200px" width="200px" src="{% static 'images/signup.jpg' %}" alt="">
+                    </div>
+                    <form action="" name="formValidation" method="post">
+                        <div class="md-3 py-2 justify-content-center">
+                            <label for="" class="form-label">Username</label>
+                            <input type="text" name="username" class="form-control" autocomplete="off" required>
+                        </div>
+                 
+                            <div class="md-3">
+                                <label for="" class="form-label">Firstname</label>
+                                <input type="text" name="firstname" class="form-control" autocomplete="off" required>
+                            </div>
+                            <div class="md-3">
+                                <label for="" class="form-label">Lastname</label>
+                                <input type="text" name="lastname" class="form-control" autocomplete="off" required>
+                            </div>
+                  
+          
+                            <div class="md-3">
+                                <label for="" class="form-label">Password</label>
+                                <input type="password" name="password" class="form-control" autocomplete="off" required>
+                            </div>
+                            <div class="md-3">
+                                <label for="" class="form-label">Confirm Password</label>
+                                <input type="password" name="confirmpassword" class="form-control" autocomplete="off" required>
+                            </div>
+                
+                        <div class="md-3 py-2">
+                            <label for="" class="form-label">Email</label>
+                            <input type="email" name="email" class="form-control" autocomplete="off" required>
+                        </div>
+                        <div class="md-3 py-2">
+                            <label for="" class="form-label">Mobile Number</label>
+                            <input type="text" name="mobilenumber" class="form-control" autocomplete="off" required>
+                        </div>
+                        <div class="mb-3 offset-5 my-3">
+                            <button type="submit" onclick="Signup()" class=" text-dark btn btn-info"
+                                name="submit">SignUp</button>
+                        </div>
+                    </form>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <!-- signup modal ends here  -->
+
+    {% block content %}
+    {% endblock  %}
+    <!-- Programming Gif ends here -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>  

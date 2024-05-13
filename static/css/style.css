@@ -1,0 +1,77 @@
+*{
+    font-family:  "Kanit", sans-serif;
+    /* font-weight: bold; */
+}
+ul li i {
+    font-size: 25px;
+}
+
+.modal-header h1 {
+    font-size: larger;
+}
+
+.btn-close {
+    color: #ffffff;
+    /* White color */
+}
+.para{
+    float: left;
+}
+.image{
+    border: 50%;
+    float: right;
+}
+.modal-body a{
+    text-decoration: none;
+    color: cadetblue;
+}
+
+h2{
+    font-family: "Bungee", sans-serif;
+}
+.hr{
+    
+    border: 2px solid rgb(24, 21, 64);
+
+}
+.para{
+    font-size: larger;
+}
+.custom-shape {
+    
+    clip-path: polygon(96.04% 69.5%,68.77% 96.34%,30.5% 96.04%,3.66% 68.77%,3.96% 30.5%,31.23% 3.66%,69.5% 3.96%,96.34% 31.23%);
+ 
+}
+.card h5{
+    font-family: "Protest Riot", sans-serif;
+}
+.strip h4{
+    font-family: "Bungee", sans-serif;
+}
+
+.mycard{
+    margin-left: 19%;
+}
+.my_list{
+    display: flex;
+    justify-content: space-evenly;
+}
+.myhead{
+    color: white;
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 7px;
+}
+.myFooter,h5{
+    color: white;
+     font-family: "Bungee", sans-serif;
+    /* background: #0f0c29;  fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.head-5{
+    font-family: "Chicle", serif;
+    font-weight: 400;
+font-style: normal;
+}

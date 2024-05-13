@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Vaibhav | About
+{% endblock %}
+{% block content %}
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  ">
+            <div class="modal-content ">
+                <div class="modal-header   bg-info">
+                    <h2 class="modal-title  fs-4" id="exampleModalLabel">Login Page</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body shadow rounded bg-light">
+                    <center>
+                        <img class="m-auto" height="170px" width="auto" src="{% static 'images/login.png' %}" alt="">
+                    </center>
+                    <form action="" method="post">
+                        <div class="md-3">
+                            <label for="" class="form-label">Username</label>
+                            <input type="text" class="form-control" autocomplete="off" required>
+                        </div>
+                        <div class="md-3">
+                            <label for="" class="form-label">Password</label>
+                            <input type="password" class="form-control" autocomplete="off" required>
+                        </div>
+                        <div class="mb-3 offset-5 my-3">
+                            <button type="submit" onclick="" class=" text-dark btn btn-info"
+                                name="submit">Login</button>
+                        </div>
+                        <a href="" class="link my-4">Don't have an account..?</a>
+                        <br>
+
+                        <a href="">Forgot Password..</a>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--  Modal for Login Ends Here -->
+
+    <div class="container-fluid">
+        <div class="row  bg-dark">
+            <div class="col-md-12">
+                <img src="{% static 'images/Vaibhav_Banner.jpg' %}" class="w-100" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container m-auto my-3">
+        <h2 class="myhead text-center py-2" style="height: 70px;">Skills I Have Acquired</h2>
+        <div class="row my-2">
+
+            <div class="col-md-4 my-3 col-sm-6">
+                <div class="card m-auto  card1 my-3 shadow" style="width: 12rem;  border-radius:10px">
+                    <div class="card-body ">
+                        <img src="{% static 'images/HTML5-Icon.jpg' %}" height="100px" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-footer myFooter">
+
+                        <h5 class="text-center">HTML5</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 my-3">
+                <div class="card m-auto  card1 my-3 shadow" style="width: 12rem;  border-radius:10px">
+                    <div class="card-body">
+                        <img src="{% static 'images/CSS.jpg' %}" height="100px" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-footer myFooter">
+                        <h5 class="text-center">CSS 3</h5>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 col-sm-6 my-3">
+                <div class="card m-auto  card1 my-3 shadow" style="width: 12rem;  border-radius:10px">
+                    <div class="card-body">
+                        <img src="{% static 'images/JavaScript.jpg' %}" height="100px" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-footer myFooter">
+                        <h5 class="text-center">JavaScript</h5>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 col-sm-6 my-3">
+                <div class="card m-auto  card1 my-3 shadow" style="width: 12rem;  border-radius:10px">
+                    <div class="card-body">
+                        <img src="{% static 'images/angular.jpg' %}" height="100px" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-footer myFooter">
+
+                        <h5 class="text-center">Angular</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 my-3">
+                <div class="card m-auto  card1 my-3 shadow" style="width: 12rem;  border-radius:10px">
+                    <div class="card-body">
+                        <img src="{% static 'images/react.jpg' %}" height="100px" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-footer myFooter">
+
+                        <h5 class="text-center">React</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 my-3">
+                <div class="card m-auto  card1 my-3 shadow" style="width: 12rem;  border-radius:10px">
+                    <div class="card-body">
+                        <img src="{% static 'images/django.jpg' %}" height="100px" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-footer myFooter">
+
+                        <h5 class="text-center">Django</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 my-3">
+                <div class="card m-auto  card1 my-3 shadow" style="width: 12rem;  border-radius:10px">
+                    <div class="card-body">
+                        <img src="{% static 'images/python.jpg' %}" height="100px" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-footer myFooter">
+
+                        <h5 class="text-center">Python</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 my-3">
+                <div class="card m-auto  card1 my-3 shadow" style="width: 12rem;  border-radius:10px">
+                    <div class="card-body">
+                        <img src="{% static 'images/mysql.jpg' %}" height="100px" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-footer myFooter">
+
+                        <h5 class="text-center">MySQL</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 my-3">
+                <div class="card m-auto  card1 my-3 shadow " style="width: 12rem;  border-radius:10px">
+                    <div class="card-body">
+                        <img src="{% static 'images/Bootstrap.jpg' %}" height="100px" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-footer myFooter">
+
+                        <h5 class="text-center">BootStrap</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}

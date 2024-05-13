@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block title %}  Vaibhav | Project  {% endblock %}
+  
+{% block content %}
+
+    <div class="container  mt-3">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card shadow rounded mt-2">
+                        <h2 class="card-header text-white text-center bg-dark">Any Queries Feel Free to Ask...</h2>
+                        <div class="card-body rounded bg-light">
+                           
+                            <h3 class="card-title  text-center">Your Feedback is Valuable..🤞</h3>
+                            <table>
+                                <form action="" method="post">
+                                    {% csrf_token %}
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Name</label>
+                                        <input type="text" class="form-control" id="name"
+                                            placeholder="Enter your name...." name='name' autocomplete="off" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="email"
+                                            placeholder="Enter your email...." name="email" autocomplete="off" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Phone Number</label>
+                                        <input type="text" class="form-control" id="phone_number"
+                                            placeholder="Enter your phone_number...." name="phone" autocomplete="off" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Feedback</label>
+                                        <textarea placeholder="Please provide your feedback...." class="form-control"
+                                            id="text-area" rows="3" name="Feedback" autocomplete="off" required></textarea>
+                                    </div>
+                                    <div class="mb-3 offset-5 my-3">
+                                        <button type="submit" onclick="Submit()" style="font-size: larger;" class=" text-white btn btn-dark" name="submit">Submit</button>
+                                    </div>
+                                </form>
+                            </table>
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function Submit(){
+    let name = document.getElementById('name').value
+    let email = document.getElementById('email').value
+    let phone = document.getElementById('phone_number').value
+    let feedback = document.getElementById('text-area').value
+    
+    if(name == '' && email == '' && phone == '' && feedback == ''){
+        window.alert("Enter all the fields....")
+    }
+    else if(name == ''){
+        window.alert("Enter name....")
+    }
+    else if(email == ''){
+        window.alert("Enter email....")
+    }
+    else if(phone == ''){
+        window.alert("Enter Phone Number....")
+    }
+    else if(feedback == ''){
+        window.alert("Enter Feeback....")
+    }
+    else{
+        window.alert('Thank You for your response')
+    }
+}
+    </script> 
+{% endblock %}
+     
+

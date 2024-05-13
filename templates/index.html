@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block title %}   Vaibhav | Home  {% endblock %}
+
+{%  block content %}
+    <div class="alert alert-success alert-dismissible fade show mb-0" role="alert">
+        <strong>Hello Viewer...!</strong> Currently I am looking for full time Job opportunities. Feel Free to contact
+        me..
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <!-- navbar ends here -->
+
+
+    <!-- Carousel starts here -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img height='450px' width="100%" src="{% static 'images/Python_Banner.jpg' %}" class="d-block"
+                    alt="...">
+            </div>
+            <div class="carousel-item">
+                <img height='450px' width="100%" src="{% static 'images/programming.jpg'%}" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img height='450px' width="100%" src="{% static 'images/banner.jfif'%}" class="d-block" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="strip bg-dark py-2">
+        <marquee behavior="scroll" direction="left" scrollamount="10">
+            <h4 class="text-white pt-2">"I am actively seeking dynamic opportunities as a Python Developer, Software
+                Engineer, or Full-stack
+                Developer, where I can leverage my expertise and passion to drive innovation and contribute to impactful
+                projects."</h4>
+        </marquee>
+    </div>
+    <div class="container my-3">
+        <h2 class="myhead  text-center my-2 py-1">Want To Know About Me...</h2>
+        <div class="row">
+            <hr class="hr w-50 m-auto">
+            <div class="col-md-12 mt-4">
+                <div class="para col-md-9">
+                    Hi, I am Vaibhav Bijjala. A Motivated recent graduate with a Bachelor of Technology in Computer
+                    Science & Engineering from CSI
+                    Wesley Institute of Technology and Sciences in Hyderabad, India. Throughout my academic journey, I
+                    have demonstrated strong analytical skills and a passion for software engineering.
+                    <br>
+                    <br>
+                    My technical skills include proficiency in backend development with Core Python and Advanced Python
+                    (including Pandas and object-oriented programming), as well as frontend development using HTML,
+                    HTML5, CSS, CSS3, JavaScript and Angular. I am also skilled in SQL for database management and have
+                    experience working with frameworks such as Django for backend development and Bootstrap for
+                    responsive web design. Additionally, I am familiar with development tools like Visual Studio Code.
+                    <br>
+                    <br>
+                    I have further enriched my skills through practical experiences, including participation in the
+                    Accenture Developer Virtual Experience Program and the KPMG Data Analytics Consulting Virtual
+                    Internship, where I gained hands-on experience in software development, problem-solving, and data
+                    analysis.
+                </div>
+                <div class="image col-md-3">
+                    <center>
+                        <img src="{% static 'images/vaibhav.JPG' %}" class="custom-shape" height="500px" width='400px'
+                            alt="">
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel ends here -->
+    <div class="container m-auto mt-2">
+        <h2 class="myhead text-center my-2 py-1">My Story</h2>
+        <hr class="hr w-50 m-auto">
+        <div class="row my-3 ">
+            <div class="col-md-4 my-2">
+                <div class="card shadow mycard" style="width: 18rem;">
+                    <img src="{% static 'images/website_designer.jpg' %}" height="286px" class="card-img-top "
+                        alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Designer</h4>
+                        <hr class="w-75 m-auto mb-2">
+                        <p class="card-text">
+                            As a designer, I blend creativity with user-centric principles to produce visually
+                            compelling and functional designs. My passion lies in crafting impactful experiences that
+                            resonate with audiences and foster engagement, striving to push boundaries and set new
+                            standards in design innovation.<br></p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 my-2">
+                <div class="card shadow mycard" style="width: 18rem;">
+                    <img src="{% static 'images/Programmer.jpg' %}" class="card-img-top " alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Developer</h4>
+                        <hr class="w-75 m-auto mb-2">
+                        <p class="card-text">
+                            As a developer, I specialize in crafting efficient, scalable software solutions that meet
+                            the needs of modern businesses. With a deep understanding of programming languages and
+                            frameworks, I deliver quality code that meet the requirements that drives innovation and
+                            success. <br> <br></p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 my-2">
+                <div class="card shadow mycard" style="width: 18rem;">
+                    <img src="{% static 'images/Developer.jpg' %}" class="card-img-top " alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Programmer</h4>
+                        <hr class="w-75 m-auto mb-2">
+                        <p class="card-text">
+                            As a programmer, I excel in developing efficient, scalable software solutions tailored to
+                            meet the demands of contemporary industries. Leveraging my profound comprehension of
+                            programming languages and frameworks, I deliver code of superior quality that fuels
+                            innovation and ensures success.</p>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+   {% endblock %}
