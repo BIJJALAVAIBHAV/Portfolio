@@ -18,8 +18,8 @@ ul li i {
     float: left;
 }
 .image{
-    border: 50%;
-    float: right;
+    /* border: 50%; */
+    /* float: right; */
 }
 .modal-body a{
     text-decoration: none;
@@ -50,7 +50,7 @@ h2{
 }
 
 .mycard{
-    margin-left: 19%;
+    margin-left: 10%;
 }
 .my_list{
     display: flex;
